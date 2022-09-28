@@ -2,7 +2,7 @@
 
 class Product {
   public $name;
-  public $price;
+  public $price = 0;
   public $description;
   public $brand;
 

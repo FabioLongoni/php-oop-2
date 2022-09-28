@@ -20,7 +20,7 @@ $data2 = [
   'price'=> 9.99,
   'description' => 'Guinzaglio adatto a tutte le taglie',
   'brand' => 'Yimidon',
-  'length' => 3,
+  'length' => 5,
 ];
 $leash = new PetAccessories($data2);
 var_dump($leash);
