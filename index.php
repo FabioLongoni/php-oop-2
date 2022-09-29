@@ -13,7 +13,7 @@ $data = [
   'weight'=> 1
 ];
 $crocchette = new PetFood($data);
-var_dump($crocchette);
+//var_dump($crocchette);
 
 $data2 = [
   'name' => 'Guinzaglio',
@@ -23,11 +23,20 @@ $data2 = [
   'length' => 5,
 ];
 $leash = new PetAccessories($data2);
-var_dump($leash);
+//var_dump($leash);
+
+
+try {
+  $priceNotValid = new PetFood($data);
+} catch (Exception $e) {
+  ?><h1> <?= $e->getMessage();?></h1> <?php
+};
+
+
 
 $shopping = [$crocchette,$crocchette,$leash];
 
-var_dump($shopping);
+//var_dump($shopping);
 
 $user = new User($shopping);
 var_dump($user);
